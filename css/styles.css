@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,67 +11,72 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-
-/*GENERIC STYLES*/
-
 body {
-    background: white;
-    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+    background-color: white;
+    font-family: "open sans", sans-serif;
     font-size: 14px;
     line-height: 1.5;
     color: black;
 }
+header .navigation{
+    background-color: black;
+    color: #c78b07;
+}
 
 h1{
     font-size: 71px;
-    list-style: 106px;
+    line-height: 106px;
     font-weight: bold;
     margin-bottom: 18px;
-    color: white;
+    background-image: url(./images/main-banner.jpg);
 }
+
 h2{
     font-size: 48px;
-    line-height: 1.5;
+    line-height: 106px;
     font-weight: bold;
     margin-bottom: 18px;
+    background-color: #ffe6ac;
 }
 .connect{
     background-color: #c78b07;
     color: #000000;
 }
+.section-about {
+    background-color: #ffe6ac;
 
-/*----------*/
-
+}
 p{
     margin-bottom: 1em;
 }
@@ -84,23 +84,26 @@ img{
     max-width: 100%;
     height: auto;
 }
-
 nav{
     background: #222222;
 }
 
 .container{
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-top: 14px;
+    background-color: #222222;
+    color: #c78b07;
+}
+nav .image-1{
+    background-color: #c78b07;
+}
+.navlist-1{
+    color: #000000;
 }
 .logo-image{
     background-color: #c78b07;
     padding-top: 20px;
     padding-bottom: 20px;
-
 }
-
-
 nav a:link,
 nav a:visited {
     font-size: 28px;
@@ -116,13 +119,13 @@ nav .current-1 a:visited {
     color: #000000;
     background-color: #c78b07;
 }
-.header-image{
-    background-image: url(./images/main-banner.jpg);
+.header-welcome {
+    background-image: url(../images/main-banner.jpg);
     background-size: cover;
     padding-bottom: 68px;
     padding-top: 68px;
 }
-.header-image .container {
+.header-welcome .container {
     background: rgba(0, 0, 0, 0.5 );
     color: white;
 }
@@ -191,13 +194,12 @@ button{
     width: 1365px;
     height: 404px ;
 }
-.vision-container{
+.ourvision-container{
     background-size: cover;
     height: 270px;
-    background-image: url("./images/vision.jpg")
-    
+    background-image: url("./images/vision.jpg");
 }
-.vision-container h3{
+.ourvision-container h3{
     color: white;
     padding: 10px 10px;
 }
@@ -216,7 +218,8 @@ hr{
     font-weight: bold;
 }
 .about-bob{
-    padding-bottom: 40px ;
+    padding-bottom: 40px;
+    background-color: #ffe6ac;
 }
 .bob-rite img{
     width: 1365px;
@@ -300,6 +303,9 @@ footer{
     height: 34px;
 
 }
+.vision-container{
+    background-image:url(./image/vision.jpg) ;
+}
 .vision-container button{
     margin-top: 40px;
     padding: 30px 40px;
@@ -330,6 +336,9 @@ hr{
         flex-wrap: nowrap;
         background-color: black;
     }
+    .about-bob, .bob-text {
+        background-color: #ffe6ac;
+    }
     .headerbox{
         background-color: #000000;
     }
@@ -341,21 +350,6 @@ hr{
         margin: 10px;
         text-align: center;
     }
-}
 
-/* ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}  */
+} 
 
